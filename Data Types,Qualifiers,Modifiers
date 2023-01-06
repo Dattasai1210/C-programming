@@ -1,0 +1,68 @@
+1.Primitive Data Types:
+#include <stdio.h>
+int main()
+{
+  int a=2;
+  float b=10.5;
+  char x='d';
+  double c=4;
+  printf("%d\n",a);
+  printf("%ld\n",sizeof(a));
+  printf("%f\n",b);
+  printf("%ld\n",sizeof(b));
+  printf("%c\n",x);
+  printf("%ld\n",sizeof(x));
+  printf("%lf\n",c);
+  printf("%ld\n",sizeof(c));
+  return 0;
+}
+Output:
+2
+4
+10.500000
+4
+d
+1
+4.000000
+8
+
+2.Qualifiers
+#include <stdio.h>
+int main()
+{
+  int a=2;
+  printf("%d %d %d\n",++a,++a,++a);
+  volatile int b=2;
+  printf("%d %d %d",++b,++b,++b);
+  return 0;
+}
+Output:
+5 5 5
+5 4 3
+
+3.Modifiers
+#include<stdio.h>
+int main()
+{
+    short int a=2;
+    long int b=2;
+    signed int c=2;
+    unsigned int d=2;
+    printf("%d\n",a);
+    printf("%ld\n",sizeof(a));
+    printf("%d\n",b);
+    printf("%ld\n",sizeof(b));
+    printf("%d\n",c);
+    printf("%ld\n",sizeof(c));
+    printf("%d\n",d);
+    printf("%ld\n",sizeof(d));
+}
+Output:
+2
+2
+2
+8
+2
+4
+2
+4
