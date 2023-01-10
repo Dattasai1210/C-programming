@@ -152,3 +152,125 @@ enter number of rows:5
   *****
  *******
 *********
+
+6.
+
+#include<stdio.h>
+int main()
+{
+    int i,j,r,k,m=1;
+    printf("enter number of rows:");
+    scanf("%d",&r);
+    for(i=r;i>=1;i--)
+    {
+        for(j=1;j<=m;j++)
+        {
+            printf(" ");
+        }
+        for(k=1;k<=(2*i-1);k++)
+        {
+           printf("*");  
+        }
+        m++;
+        printf("\n");
+    }
+    return 0;
+}
+
+Output:
+
+enter number of rows:5
+ *********
+  *******
+   *****
+    ***
+     *
+
+7.LSB
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter value:");
+    scanf("%d",&n);
+    if((n&1)==1)
+    {
+        printf("Lsb bit is set");
+    }
+    else
+    {
+        printf("Lsb bit is unset");
+    }
+    return 0;
+}
+
+Output:
+
+Enter value:5
+Lsb bit is set
+
+8.MSB
+
+#include<stdio.h>
+int main()
+{
+    int n;
+    printf("Enter value:");
+    scanf("%d",&n);
+    if((n&1)==0)
+    {
+        printf("Msb bit is set");
+    }
+    else
+    {
+        printf("Msb bit is unset");
+    }
+    return 0;
+}
+
+Output:
+
+Enter value:5
+Msb bit is unset
+
+9.Get Nth Bit
+
+#include<stdio.h>
+int main()
+{
+    int n,position;
+    printf("Enter value:");
+    scanf("%d",&n);
+    printf("Enter value:");
+    scanf("%d",&position);
+    (n>>(position-1)|1)?printf("set"):printf("unset");
+    return 0;
+}
+
+Output:
+
+Enter value:5
+Enter value:3
+set
+
+10.Set Nth Bit
+
+#include<stdio.h>
+int main()
+{
+    int n,position,k;
+    printf("Enter value:");
+    scanf("%d",&n);
+    printf("Enter value:");
+    scanf("%d",&position);
+    k=(n|1<<position-1);
+    printf("%d",k);
+    return 0;
+}
+
+Output:
+
+Enter value:5
+Enter value:2
+7
