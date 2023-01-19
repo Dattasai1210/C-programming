@@ -1,0 +1,32 @@
+1.Pointer:
+
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    int *p;
+    p=&a;
+    printf("Address of p is %d\n",p);
+    printf("Value of p is %d",*p);
+    return 0;
+}
+
+2.Pointer arithematic:
+
+    #include<stdio.h>
+    int main()
+    {
+    int n=50;
+    int *p;
+    p=&n;
+    printf("Address of p variable is %u \n",p);
+    p=p+1;
+    printf("After increment: Address of p variable is %u\n",p);
+    p=p-1;
+    printf("After decrement: Address of p variable is %u\n",p);
+    p=p+3;
+    printf("After addition: Address of p variable is %u\n",p);
+    p=p-3;
+    printf("After subtraction: Address of p variable is %u\n",p);
+    return 0;
+    }
