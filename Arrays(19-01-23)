@@ -1,0 +1,44 @@
+1.1D Array:
+
+#include<stdio.h>
+int main()
+{
+    int marks[5]={20,21,25,23,24},i,sum=0;
+    float avg=0;
+    for(i=0;i<5;i++)
+    {
+        sum=sum+marks[i];
+        
+    }
+    avg=sum/i;
+    
+    printf("Sum of marks:%d\n",sum);
+    printf("Avg of marks:%.2f\n",avg);
+    return 0;
+}
+
+2.2D Array:
+
+#include<stdio.h>
+int main()
+{
+    int a[3][3],i,j;
+    printf("Enter the elements of array:");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    printf("Elements of array are:\n");
+    for(i=0;i<3;i++)
+    {
+        for(j=0;j<3;j++)
+        {
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
