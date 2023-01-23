@@ -1,0 +1,81 @@
+1.String Length:
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100];
+    printf("Enter the String:");
+    scanf("%s",str);
+    printf("Length of string is: %ld",strlen(str));
+    return 0;
+}
+
+2.String Copy:
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str1[]="Welcome To Thundersoft";
+    char str2[100];
+    strcpy(str2,str1);
+    printf("%s",str2);
+    return 0;
+}
+
+3.String Concatenation:
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str1[100]="Hello \0";
+    char str2[100]="Thundersoft";
+    strcat(str1,str2);
+    printf("%s",str1);
+}
+
+4.String Comparision:
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str1[100]="Hello";
+    char str2[100]="Hello";
+    char str3[100]="Hi";
+    printf("%d\n",strcmp(str1,str2));
+    printf("%d",strcmp(str1,str3));
+    return 0;
+}
+
+5.Count total no.of alphabets,digits and special characters:
+
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char str[100];
+    int i,alphabets=0,digits=0,specialcharacter=0;
+    printf("Enter a string:");
+    scanf("%s",str);
+    while(str[i]!='\0')
+    {
+        if ((str[i]>='a'&&str[i]<='z')||(str[i]>='A'&&str[i]<='Z'))
+        {
+            alphabets++;
+        }
+        else if(str[i]>='0'&&str[i]<='9')
+        {
+            digits++;
+        }
+        else
+        specialcharacter++;
+    i++;
+    }
+    printf("Total no.of alphabets:%d\n",alphabets);
+    printf("Total no.of digits:%d\n",digits);
+    printf("Total no.of special:%d",specialcharacter);
+    return 0;
+}
