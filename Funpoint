@@ -1,0 +1,18 @@
+#include<stdio.h>
+void length(char str[])
+{
+    int l,i,count=0;
+    for(i=0;str[i]!='\0';i++)
+    {
+        count++;
+    }
+    printf("%d",count);
+}
+int main()
+{
+    char str[]="hemalatha";
+    length(str);
+    // void (*fptr)(char []);
+    // fptr=length;
+    // fptr(str);
+}
