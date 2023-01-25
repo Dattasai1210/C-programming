@@ -1,0 +1,59 @@
+1.Bitwise AND:
+
+#include<stdio.h>
+int main()
+{
+    int a=5,b=6;
+    printf("output is:%d",a&b);
+    return 0;
+}
+
+2.Bitwise OR:
+
+#include<stdio.h>
+int main()
+{
+    int a=5,b=6;
+    printf("output is:%d",a|b);
+    return 0;
+}
+
+3.Bitwise XOR:
+
+#include<stdio.h>
+int main()
+{
+    int a=5,b=6;
+    printf("output is:%d",a^b);
+    return 0;
+}
+
+4.Left Shift
+
+#include<stdio.h>
+int main()
+{
+    int n,bit;
+    printf("Enter value:");
+    scanf("%d",&n);
+    printf("Enter bit value:");
+    scanf("%d",&bit);
+    n=n<<bit;
+    printf("after left shift value is:%d",n);
+    return 0;
+}
+
+5.Right Shift:
+
+#include<stdio.h>
+int main()
+{
+    int n,bit;
+    printf("Enter value:");
+    scanf("%d",&n);
+    printf("Enter bit value:");
+    scanf("%d",&bit);
+    n=n>>bit;
+    printf("after right shift value is:%d",n);
+    return 0;
+}
