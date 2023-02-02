@@ -1,0 +1,41 @@
+1.Creating Single Linked List & counting no.of nodes
+
+#include<stdio.h>
+#include<stdlib.h>
+struct node{
+    int data;
+    struct node *link;
+};
+int main()
+{
+    int c=0;
+    struct node *ptr;
+    struct node *head;
+    
+    struct node *current0=malloc(sizeof(struct node));
+    current0->data=45;
+    current0->link=NULL;
+    head=current0;
+    
+    struct node *current=malloc(sizeof(struct node));
+    current->data=30;
+    current->link=NULL;
+    current0->link=current;
+    
+    struct node *current1=malloc(sizeof(struct node));
+    current1->data=10;
+    current1->link=NULL;
+    current->link=current1;
+    
+    ptr=head;
+    
+    while(ptr!=NULL)
+    {
+        c++;
+        printf("%d ",ptr->data);
+        ptr=ptr->link;
+    }
+    printf("\n");
+    printf("%d ",c);
+    return 0;
+}
